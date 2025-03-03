@@ -1,0 +1,22 @@
+{
+  "name": "otus030325",
+  "version": "1.0.0",
+  "description": "test otus project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shappy9009/otus030325.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shappy9009/otus030325/issues"
+  },
+  "homepage": "https://github.com/shappy9009/otus030325#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
