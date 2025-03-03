@@ -1,12 +1,13 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import jest from "eslint-plugin-jest";
+import eslintRecommended from "eslint-plugin-prettier/recommended";
 
-/** @type {import('eslint').Linter.Config[]} */
 export default [
+  eslintRecommended,
   {
     languageOptions: {
-      globals: globals.browser,
+      globals: globals.browser
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
@@ -14,10 +15,9 @@ export default [
       "no-unused-vars": "error",
       "no-console": "error",
       "semi": "error",
-    }
+    },
   },
   {
-    // Для тестов
     files: ["src/**/*.test.js"],
     ...jest.configs['flat/recommended'],
   }
