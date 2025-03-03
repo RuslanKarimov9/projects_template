@@ -6,11 +6,15 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shappy9009/otus030325.git"
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
   },
   "author": "",
   "license": "ISC",
@@ -32,8 +36,10 @@
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.4.3",
     "prettier": "3.5.3"
   }
 }
